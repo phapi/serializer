@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "030622d8931c7578c67d9750587849b3",
+    "hash": "08f174395980d3abe54be41943333ea6",
     "packages": [
         {
             "name": "phapi/contract",
@@ -1799,7 +1799,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.5.0"
+        "php": ">=5.6.0"
     },
     "platform-dev": []
 }

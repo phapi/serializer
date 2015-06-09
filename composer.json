@@ -1,0 +1,39 @@
+{
+  "name": "phapi/serializer",
+  "description": "Phapi Serializer is a helper class for Serializer Middleware.",
+  "keywords": [
+    "middleware", "serializer", "phapi"
+  ],
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "homepage": "http://phapi.github.io",
+  "authors": [
+    {
+      "name": "Peter Ahinko",
+      "email": "peter@ahinko.se",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "phapi/contract": "dev-master",
+    "phapi/http": "dev-master",
+    "phapi/exception": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.6.*",
+    "mockery/mockery": "0.9.*",
+    "codeclimate/php-test-reporter": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phapi\\Serializer\\": "src/Phapi/Serializer/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phapi\\Tests\\Serializer\\": "tests/Phapi/Serializer/"
+    }
+  }
+}

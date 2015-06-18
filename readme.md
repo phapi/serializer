@@ -1,10 +1,22 @@
 # Serializer Helper Class
 The serializer and deserializer helper classes implements a majority of the [SerializerMiddleware Contract](https://github.com/phapi/contract/blob/master/src/Phapi/Contract/Middleware/SerializerMiddleware.php).
 
-Each serializer package should include both a Serializer and a Deserializer. You need to implement two parts for each of them:
+Each serializer middleware package should always contain two classes: a serializer and a deserializer.
 
-- List supported mime types
-- Implement the abstract serializer/deserializer method. Note that the method should throw an InternalServerError if the serialize/deserialize fails.
+You can dramatically shorten the amount of time and code by using the [Phapi Serializer Helper](https://github.com/phapi/serializer) classes.
+
+```shell
+$ php composer.phar require phapi/serializer:1.*
+```
+
+These classes contains a wast majority of the needed code for a serializer. Since there is only two things that is different between different serializers there is no point in writing the same code over and over again in each serializer.
+
+The two things that separates serializers are:
+
+- A list of supported mime types
+- The <code>serialize()</code> or <code>deserialize()</code> method. Note that the method should throw an InternalServerError if the serialize/deserialize fails.
+
+Here's an example that can be used as a starting point for a new serializer:
 
 ```php
 <?php
@@ -27,7 +39,7 @@ class Example extends Serializer
     ];
 
     /**
-     * Serialize body to json
+     * Serialize body
      *
      * @param array $unserializedBody
      * @return string

@@ -9,20 +9,12 @@ Each serializer package should include both a Serializer and a Deserializer. You
 ```php
 <?php
 
-namespace Phapi\Middleware\Serializer\Type;
+namespace Phapi\Middleware\Serializer\Example;
 
 use Phapi\Exception\InternalServerError;
 use Phapi\Serializer\Serializer;
 
-
-/**
- * @category Phapi
- * @package  Phapi\Middleware\Serializer\Type
- * @author   Peter Ahinko <peter@ahinko.se>
- * @license  MIT (http://opensource.org/licenses/MIT)
- * @link     https://github.com/phapi/serializer-type
- */
-class Type extends Serializer
+class Example extends Serializer
 {
 
     /**
@@ -31,6 +23,7 @@ class Type extends Serializer
      * @var array
      */
     protected $mimeTypes = [
+        'application/example'
     ];
 
     /**
@@ -50,10 +43,10 @@ class Type extends Serializer
 See the Json [serializer](https://github.com/phapi/serializer-json/blob/master/src/Phapi/Middleware/Serializer/Json/Json.php) and [deserializer](https://github.com/phapi/serializer-json/blob/master/src/Phapi/Middleware/Deserializer/Json/Json.php) for a working example.
 
 ## Phapi
-This middleware is a Phapi package used by the [Phapi Framework](https://github.com/phapi/phapi). The middleware are also [PSR-7](https://github.com/php-fig/http-message) compliant and implements the [Phapi Middleware Contract](https://github.com/phapi/contract).
+This is a Phapi package used by the [Phapi Framework](https://github.com/phapi/phapi).
 
 ## License
-Serializer JSON is licensed under the MIT License - see the [license.md](https://github.com/phapi/serializer-json/blob/master/license.md) file for details
+Serializer is licensed under the MIT License - see the [license.md](https://github.com/phapi/serializer/blob/master/license.md) file for details
 
 ## Contribute
-Contribution, bug fixes etc are [always welcome](https://github.com/phapi/serializer-json/issues/new).
+Contribution, bug fixes etc are [always welcome](https://github.com/phapi/serializer/issues/new).

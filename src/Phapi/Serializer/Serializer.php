@@ -5,7 +5,7 @@ namespace Phapi\Serializer;
 use Phapi\Contract\Di\Container;
 use Phapi\Contract\Middleware\SerializerMiddleware;
 use Phapi\Exception\InternalServerError;
-use Phapi\Http\Stream;
+use Zend\Diactoros\Stream;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 

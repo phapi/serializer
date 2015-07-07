@@ -55,7 +55,7 @@ class Example extends Serializer
 See the Json [serializer](https://github.com/phapi/serializer-json/blob/master/src/Phapi/Middleware/Serializer/Json/Json.php) and [deserializer](https://github.com/phapi/serializer-json/blob/master/src/Phapi/Middleware/Deserializer/Json/Json.php) for a working example.
 
 ## Phapi
-This is a Phapi package used by the [Phapi Framework](https://github.com/phapi/phapi).
+This is a Phapi package used by the [Phapi Framework](https://github.com/phapi/phapi-framework).
 
 ## License
 Serializer is licensed under the MIT License - see the [license.md](https://github.com/phapi/serializer/blob/master/license.md) file for details

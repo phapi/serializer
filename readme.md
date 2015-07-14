@@ -1,4 +1,9 @@
 # Serializer Helper Class
+
+[![Build status](https://img.shields.io/travis/phapi/serializer.svg?style=flat-square)](https://travis-ci.org/phapi/serializer)
+[![Code Climate](https://img.shields.io/codeclimate/github/phapi/serializer.svg?style=flat-square)](https://codeclimate.com/github/phapi/serializer)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/phapi/serializer.svg?style=flat-square)](https://codeclimate.com/github/phapi/serializer/coverage)
+
 The serializer and deserializer helper classes implements a majority of the [SerializerMiddleware Contract](https://github.com/phapi/contract/blob/master/src/Phapi/Contract/Middleware/SerializerMiddleware.php).
 
 Each serializer middleware package should always contain two classes: a serializer and a deserializer.
